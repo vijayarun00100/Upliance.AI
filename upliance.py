@@ -4,7 +4,7 @@ from typing import Dict
 from google import genai
 from google.genai import types
 
-client = genai.Client(api_key="AIzaSyCcqAiasDmW3Lb2WhWvnfm4mA-47HpUkpk")
+client = genai.Client(api_key=os.getenv("GENAI_API_KEY"))
 
 MODEL_NAME = "gemini-3-flash-preview"
 
